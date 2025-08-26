@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
 import Slide1 from './slides/slide-1';
 import Slide2 from './slides/slide-2';
 import Slide3 from './slides/slide-3';
@@ -20,6 +20,7 @@ function App() {
       </div>
       
       <Routes>
+        <Route path='/' element={<Navigate to="/slide-1" replace />} />
         <Route path='/slide-1' element={<Slide1/>}/>
         <Route path='/slide-2' element={<Slide2/>}/>
         <Route path='/slide-3' element={<Slide3/>}/>
