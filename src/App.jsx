@@ -5,6 +5,7 @@ import Slide3 from './slides/slide-3';
 import Slide4 from './slides/slide-4';
 import Slide5 from './slides/slide-5';
 import Slide6 from './slides/slide-6';
+import Slide7 from './slides/slide-7';
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
         <Link to='/slide-4' className='bg-gray-200 p-2 rounded'>Slide 4</Link>
         <Link to='/slide-5' className='bg-gray-200 p-2 rounded'>Slide 5</Link>
         <Link to='/slide-6' className='bg-gray-200 p-2 rounded'>Slide 6</Link>
+        <Link to='/slide-7' className='bg-gray-200 p-2 rounded'>Slide 7</Link>
       </div>
       
       <Routes>
@@ -27,6 +29,7 @@ function App() {
         <Route path='/slide-4' element={<Slide4/>}/>
         <Route path='/slide-5' element={<Slide5/>}/>
         <Route path='/slide-6' element={<Slide6/>}/>
+        <Route path='/slide-7' element={<Slide7/>}/>
       </Routes>
     </BrowserRouter>
   )
