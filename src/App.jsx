@@ -6,23 +6,14 @@ import Slide4 from './slides/slide-4';
 import Slide5 from './slides/slide-5';
 import Slide6 from './slides/slide-6';
 import Slide7 from './slides/slide-7';
+import Shein1 from './slides/shein-1';
 
 function App() {
   
   return (
     <BrowserRouter>
-      <div className='flex items-center overflow-x-auto gap-3'>
-        <Link to='/slide-1' className='bg-gray-200 p-2 rounded'>Slide 1</Link>
-        <Link to='/slide-2' className='bg-gray-200 p-2 rounded'>Slide 2</Link>
-        <Link to='/slide-3' className='bg-gray-200 p-2 rounded'>Slide 3</Link>
-        <Link to='/slide-4' className='bg-gray-200 p-2 rounded'>Slide 4</Link>
-        <Link to='/slide-5' className='bg-gray-200 p-2 rounded'>Slide 5</Link>
-        <Link to='/slide-6' className='bg-gray-200 p-2 rounded'>Slide 6</Link>
-        <Link to='/slide-7' className='bg-gray-200 p-2 rounded'>Slide 7</Link>
-      </div>
-      
       <Routes>
-        <Route path='/' element={<Navigate to="/slide-1" replace />} />
+        <Route path='/' element={<Shein1/>}/>
         <Route path='/slide-1' element={<Slide1/>}/>
         <Route path='/slide-2' element={<Slide2/>}/>
         <Route path='/slide-3' element={<Slide3/>}/>
