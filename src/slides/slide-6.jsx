@@ -42,7 +42,7 @@ function Slide6() {
         })}
 
         <div className='w-full mt-3 flex flex-col items-center justify-center'>
-          <div className='flex px-3 gap-1 absolute w-[350px] items-center'>
+          <div className='flex px-3 gap-1 absolute w-[380px] items-center'>
             <MdPhotoCamera className='text-white bg-blue-500 p-[5px] rounded-full text-4xl z-15' />
             <div className='w-[60%] -z-10'></div>
             <CiMicrophoneOn className='text-white text-2xl z-15'/>
