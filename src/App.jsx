@@ -8,21 +8,28 @@ import Slide6 from './slides/slide-6';
 import Slide7 from './slides/slide-7';
 import Shein1 from './slides/shein-1';
 import Shein2 from './slides/shein-2';
+import Shein3 from './slides/shein-3'
+import { FaBars } from 'react-icons/fa';
+import { useState } from 'react';
+import RightHamburgerMenu from './slides/RightHamburgerMenu';
 
 function App() {
-  
   return (
     <BrowserRouter>
+
+      <RightHamburgerMenu />
+
       <Routes>
-        <Route path='/' element={<Shein1/>}/>
-        <Route path='/shein-2' element={<Shein2/>}/>
-        <Route path='/slide-1' element={<Slide1/>}/>
-        <Route path='/slide-2' element={<Slide2/>}/>
-        <Route path='/slide-3' element={<Slide3/>}/>
-        <Route path='/slide-4' element={<Slide4/>}/>
-        <Route path='/slide-5' element={<Slide5/>}/>
-        <Route path='/slide-6' element={<Slide6/>}/>
-        <Route path='/slide-7' element={<Slide7/>}/>
+        <Route path='/' element={<Shein1 />} />
+        <Route path='/shein-2' element={<Shein2 />} />
+        <Route path='/shein-3' element={<Shein3 />} />
+        <Route path='/slide-1' element={<Slide1 />} />
+        <Route path='/slide-2' element={<Slide2 />} />
+        <Route path='/slide-3' element={<Slide3 />} />
+        <Route path='/slide-4' element={<Slide4 />} />
+        <Route path='/slide-5' element={<Slide5 />} />
+        <Route path='/slide-6' element={<Slide6 />} />
+        <Route path='/slide-7' element={<Slide7 />} />
       </Routes>
     </BrowserRouter>
   )

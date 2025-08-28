@@ -42,13 +42,13 @@ function Slide6() {
         })}
 
         <div className='w-full mt-3 flex flex-col items-center justify-center'>
-          <div className='flex px-3 gap-1 absolute w-[400px] items-center'>
+          <div className='flex px-3 gap-1 absolute w-[350px] items-center'>
             <MdPhotoCamera className='text-white bg-blue-500 p-[5px] rounded-full text-4xl z-15' />
             <div className='w-[60%] -z-10'></div>
             <CiMicrophoneOn className='text-white text-2xl z-15'/>
             <TbPhotoVideo className='text-white text-2xl z-15' />
             <LuSmilePlus className='text-white text-2xl z-15' />
-            <button onClick={() => {setMessages([...messages, msg])}} className='z-15'><IoMdSend className='text-blue-400 ml-1 text-2xl' /></button>
+            <button onClick={() => {setMessages([...messages, msg])}} className='z-15'><IoMdSend className='text-blue-400 ml-1 text-3xl'/></button>
           </div>
           <input className='rounded-full bg-zinc-700 text-gray-100 p-3 w-full pl-13 z-10' placeholder="Message..." value={msg} onChange={(e)=>setMsg(e.target.value)}/>
         </div>
