@@ -25,7 +25,7 @@ export default function Shein2() {
         <div className="flex items-center justify-center my-5 pb-5">
             <div className="w-[400px] shadow-lg max-w-md mx-auto bg-white font-sans">
                 <div className="w-full md:w-1/2 flex justify-center">
-                    <img src='/4.jpg' alt="..." className="rounded-lg shadow-lg object-cover h-[200px] w-[200px]"/>
+                    <img src='/4.jpg' alt="..." className="rounded-lg shadow-lg object-cover h-[200px] w-[200px]" />
                 </div>
                 <div className="p-6 text-center">
                     <h1 className="text-3xl font-bold">SHEIN<span className="text-purple-500">VERSE</span></h1>
@@ -36,18 +36,16 @@ export default function Shein2() {
                     <div className="flex items-center justify-center text-purple-600 font-bold text-sm tracking-wider">
                         <span className="text-yellow-400 text-3xl mr-4">✨</span> GET EXCLUSIVE BENEFITS LIKE <span className="text-yellow-400 text-3xl ml-4">✨</span>
                     </div>
-                    
+
                     {sections.map((item, index) => (
-                        <div  key={index} className={`flex flex-row items-center relative ${index % 2 === 1 ? 'flex-row-reverse' : ''} border`}>
-                            <div className={`relative w-3/4 ${index % 2 === 0 ? 'ml-15' : ''} bg-white p-6 md:p-8 rounded-3xl z-10 ${index % 2 === 0 ? 'md:ml-20' : 'md:mr-20'} flex flex-col items-center justify-end border border-red-600`}>
-                                <h2 className="font-bold text-xl mb-2 text-white bg-black p-2 rounded-md inline-block">{item.title}</h2>
-                                <p style={{ textAlign: "justify" }} className="text-gray-800 font-semibold text-sm md:text-base mt-2 z-20">
-                                    {item.text}
-                                </p>
+                        <div key={index} className={`${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} w-full flex items-center relative`}>
+                            <div className="w-2/5 h-full overflow-hidden z-20">
+                                <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
                             </div>
 
-                            <div className={`absolute top-1/2 -translate-y-1/2 w-40 h-40 md:w-56 md:h-56 overflow-hidden z-20  ${index % 2 === 0 ? 'left-0 md:left-auto md:right-0' : 'right-0 md:right-auto md:left-0'}`}>
-                                <img src={item.img} alt={item.title} className="w-full h-full object-cover"/>
+                            <div className="w-3/5">
+                                <h2 className="font-semibold text-lg mb-2 text-white bg-black p-1 rounded-md inline-block">{item.title}</h2>
+                                <p style={{ textAlign: "justify" }} className="text-gray-800 border rounded-xl border-gray-600 font-semibold text-sm md:text-base mt-2 z-20 p-2">{item.text}</p>
                             </div>
                         </div>
                     ))}
@@ -55,19 +53,25 @@ export default function Shein2() {
 
                 <div className="flex gap-5 items-center justify-center bg-red-50 mx-5 mb-5">
                     <div className="flex flex-col items-center justify-center p-2">
-                        <HiSpeakerphone className="text-[#EFBF04] text-5xl"/>
+                        <HiSpeakerphone className="text-[#EFBF04] text-5xl" />
                         <p className="font-semibold text-[12px]">Get Featured</p>
                     </div>
                     <div className="flex flex-col items-center justify-center p-2">
-                        <IoBag className="text-[#EFBF04] text-5xl"/>
+                        <IoBag className="text-[#EFBF04] text-5xl" />
                         <p className="font-semibold text-[12px]">Brand Collab</p>
                     </div>
                     <div className="flex flex-col items-center justify-center p-2">
-                        <GiTwoCoins className="text-[#EFBF04] text-5xl"/>
+                        <GiTwoCoins className="text-[#EFBF04] text-5xl" />
                         <p className="font-semibold text-[12px]">Earn Commissions</p>
                     </div>
                 </div>
+
+                <div className="flex gap-4 p-3 text-sm items-center" style={{ textAlign: 'justify' }}>
+                    <input type="checkbox" className="w-10 h-10 accent-black cursor-pointer" />
+                    <p>I hereby confirm that I read, understood and agree to receive WhatsApp updates from Shein Creator Program and <span className="text-blue-600 font-semibold">Terms and Use</span> and <span className="text-blue-600 font-semibold">Privacy Policy</span></p>
+                </div>
+                <a href="/shein-3" className="bg-zinc-900 text-white font-semibold w-[380px] p-3 ml-[10px] mb-5 rounded-lg flex items-center justify-center">Join the tribe</a>
             </div>
         </div>
-    );
+    )
 }
