@@ -24,8 +24,8 @@ export default function Shein2() {
     return (
         <div className="flex items-center justify-center my-5 pb-5">
             <div className="w-[400px] shadow-lg max-w-md mx-auto bg-white font-sans">
-                <div className="w-full md:w-1/2 flex justify-center">
-                    <img src='/4.jpg' alt="..." className="rounded-lg shadow-lg object-cover h-[200px] w-[200px]" />
+                <div className="w-full flex justify-center items-center">
+                    <img src='/4.jpg' alt="..." className="rounded-lg shadow-lg object-cover h-[200px] w-[200px] mx-auto" />
                 </div>
                 <div className="p-6 text-center">
                     <h1 className="text-3xl font-bold">SHEIN<span className="text-purple-500">VERSE</span></h1>
