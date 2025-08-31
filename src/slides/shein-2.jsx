@@ -1,6 +1,7 @@
 import { GiTwoCoins } from "react-icons/gi";
 import { HiSpeakerphone } from "react-icons/hi";
 import { IoBag } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 export default function Shein2() {
     const sections = [
