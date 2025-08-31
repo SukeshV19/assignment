@@ -71,7 +71,7 @@ export default function Shein2() {
                     <input type="checkbox" className="w-10 h-10 accent-black cursor-pointer" />
                     <p>I hereby confirm that I read, understood and agree to receive WhatsApp updates from Shein Creator Program and <span className="text-blue-600 font-semibold">Terms and Use</span> and <span className="text-blue-600 font-semibold">Privacy Policy</span></p>
                 </div>
-                <a href="/shein-3" className="bg-zinc-900 text-white font-semibold w-[380px] p-3 ml-[10px] mb-5 rounded-lg flex items-center justify-center">Join the tribe</a>
+                <Link to="/shein-3" className="bg-zinc-900 text-white font-semibold w-[380px] p-3 ml-[10px] mb-5 rounded-lg flex items-center justify-center">Join the tribe</Link>
             </div>
         </div>
     )

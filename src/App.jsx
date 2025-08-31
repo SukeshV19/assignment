@@ -9,8 +9,6 @@ import Slide7 from './slides/slide-7';
 import Shein1 from './slides/shein-1';
 import Shein2 from './slides/shein-2';
 import Shein3 from './slides/shein-3'
-import { FaBars } from 'react-icons/fa';
-import { useState } from 'react';
 import RightHamburgerMenu from './slides/RightHamburgerMenu';
 
 function App() {
